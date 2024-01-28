@@ -1,0 +1,78 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.background{
+    background-size: cover;
+    background-position: center;
+    color: white;
+    background-repeat: no-repeat;
+    height: 350px;
+    background-attachment: fixed;
+}
+
+.gambar{
+    background-image: url("asset/Kyoto.jpg");
+}
+.gambar2{
+    background-image: url("asset/Osaka.jpg");
+}
+
+.gambar3{
+    background-image: url("asset/nara.jpg");
+}
+.gambar4{
+    background-image: url("asset/d-jpn.jpg");
+}
+
+.gambar5{
+    background-image: url("asset/shibuya.jpg");
+}
+
+.gambar6{
+    background-image: url("asset/louie-martinez-IocJwyqRv3M-unsplash.jpg");
+}
+
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.nav-link-active{
+    color: red;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.form-pesan{
+    position: relative;
+    top: -120px;
+}
+
+.form-control{
+    width: 289.05px;
+}
+
+.input-group-append {
+    cursor: pointer;
+  }
+
+.grup{
+    width: 100%;
+    height: 680px;
+   background-image: url("asset/daisy-chen-J4H50uMTw3M-unsplash-1.jpg");
+   background-size: cover;
+   background-position: center;
+}  
+

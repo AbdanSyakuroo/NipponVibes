@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- icon -->
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-dark fw-normal fixed-top p-3" style="border-bottom: 1px solid red;">
+        <a class="navbar-brand fw-bold text-white ps-5" href="#"> <span style="color: red;">Nippon</span>Vibes</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link-active" style="margin-right: 30px; margin-top: 9px;" href="#">Home</a>
+                <a class="nav-link me-4" href="#des">Destination</a>
+                <a class="nav-link me-4" href="#paket">Package</a>
+                <a class="nav-link me-4" href="#test">Testimoni</a>
+                <a class="nav-link me-4" href="#contact">Contact</a>
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn me-3" style="background-color: red; color: white;" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">
+                Sign in
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5 fw-medium" id="exampleModalLabel">Log In/ Register</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6 class="fw-normal" style="font-size: 14px; color: gray;">Email/Mobile Number :</h6>
+                            <input type="email" class="form-control custom-input" id="email" aria-describedby="email"
+                                placeholder="Email address">
+                            <h6 class="fw-normal mt-2" style="font-size: 14px; color: gray;">Password :</h6>
+                            <input type="password" class="form-control custom-input" id="password" aria-describedby="password"
+                                placeholder="Password">
+                            <button type="submit" class="btn mt-3 w-100"
+                                style="height: 40px; background-color: red; color: white;">Login</button>
+                            <div class="d-flex mt-3">
+                                <hr style="width: 35%;"><h6 class="text-center fw-normal mt-2" style="color: gray; font-size: 14px;">Log in/Register with</h6>
+                            <hr style="width: 35%;">
+                            </div>
+                            
+                            
+                            <button type="submit" class="btn mt-3 w-100 custom-button"
+                                style="height: 45px; border: 1px solid red; box-shadow: 3px 3px 1px 1px rgba(0,0,0,0.15);">
+                                <img class="google" src="asset/google.png" alt=""> &nbsp; Sign in with Google
+                            </button>
+
+                            <button type="submit" class="btn mt-3 w-100 custom-button"
+                                style="height: 45px; border: 1px solid red; box-shadow: 3px 3px 1px 1px rgba(0,0,0,0.15); ">
+                                <img class="google" src="asset/Facebook_Logo_(2019).png" alt=""> &nbsp; Sign in with
+                                Facebook
+                            </button>
+
+                            <div class="text-center mt-4" style="font-size: 14px;">By registering, you agree to our
+                                <span class="fw-semibold" style="color: rgb(0, 89, 255);">Terms & Conditions</span> and
+                                that you have read our <span class="fw-semibold" style="color: rgb(0, 89, 255);">Privacy
+                                    Notice.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- hero -->
+
+    <div class="container-fluid hero-1">
+
+
+        <div class="container teks-hero text-center fw-extrabold">
+            <h1 class="custom-tebal">Sambutlah Petualangan Anda <br>di Negeri Sakura!</h1>
+            <h5 class="fw-normal mt-3">Dari Tokyo hingga Osaka, Kyoto hingga Shibuya. <br>Mari temukan pesona unik
+                setiap kota dan alam indah yang memikat hati anda.</h5>
+
+
+            <form class="d-flex" role="search">
+                <input class="form-control me-2 rounded-pill mt-3" type="search" placeholder="Pilih Perjalananmu"
+                    aria-label="Search" style="width: 500px; margin-left: 250px;">
+                <button class="btn cari p-auto mt-3" style="height: 35px;" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container text-center " style="padding-top: 90px; padding-bottom: 90px;" id="des">
+
+        <h6>Destinasi Pilihan</h6>
+        <h3>Pilihlah Sesuai Keinginanmu</h3>
+        <div class="section-border"></div>
+
+        <div class="swiper mySwiper" style="margin-top: 50px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="kyoto.html">
+                        <div class="card">
+                            <img src="asset/Kyoto.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-white bg-danger p-1">
+                                <p class="card-text fw-normal">Kyoto | Japan
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="osaka.html">
+                        <div class="card">
+                            <img src="asset/Osaka.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-white bg-danger p-1">
+                                <p class="card-text fw-normal">Osaka | Japan
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="nara.html">
+                        <div class="card">
+                            <img src="asset/nara.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-white bg-danger p-1">
+                                <p class="card-text fw-normal">Nara | Japan
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="urayasu.html">
+                        <div class="card">
+                            <img src="asset/urayasu.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-white bg-danger p-1">
+                                <p class="card-text fw-normal">Urayasu | Japan
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="shibuya.html">
+                        <div class="card">
+                            <img src="asset/shibuya.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-white bg-danger p-1">
+                                <p class="card-text fw-normal">Shibuya | Japan
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="tokyo.html">
+                        <div class="card">
+                            <img src="asset/louie-martinez-IocJwyqRv3M-unsplash.jpg" class="card-img-top" alt="...">
+                            <div class="card-body text-white bg-danger p-1">
+                                <p class="card-text fw-normal">Tokyo | Japan
+                                </p>
+
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination swp-1"></div>
+        </div>
+    </div>
+
+    <!-- end -->
+    <!-- best paket -->
+
+    <div class="container-fluid bg-dark" style="color: white; padding-top: 65px; padding-bottom: 90px; height: 670px;">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="fw-bold">Perjalanan Terbaik Kami di Setiap Tempat</h1>
+                <h5 class="fw-normal">Kami menghadirkan wisata terbaik di setiap tempat yang kami tawarkan</h5>
+            </div>
+
+
+            <div class="swiper mySwiper4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="container" style="height: 470px; margin-top: 60px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="fw-semibold">Urayasu</h5>
+                                    <h2 class="fw-bold">Disneyland Tokyo</h2>
+                                    <br>
+
+                                    <p style="text-align: justify;">Disneyland merupakan taman hiburan yang menawarkan
+                                        pengalaman magis dan penuh kegembiraan untuk pengunjung dari berbagai usia.
+                                        <br><br> Taman ini didirikan oleh Walt Disney dan merupakan rumah bagi
+                                        karakter-karakter favorit Disney. Disneyland terkenal dengan kastil putri yang
+                                        ikonik, parades yang menawan, pertunjukan panggung, dan berbagai wahana
+                                        atraktif. </p>
+
+                                </div>
+                                <div class="col-6">
+                                    <img src="asset/d-jpn.jpg"
+                                        style="width: 480px; height: 330px; margin-left: 70px; margin-top: 10px;"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="container" style="height: 470px; margin-top: 60px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="fw-semibold">Nara </h5>
+                                    <h2 class="fw-bold">Kuil Todai-ji</h2>
+                                    <br>
+
+                                    <p style="text-align: justify;">Salah satu daya tarik utama Kuil Todai-ji adalah
+                                        Patung Buddha Daibutsu yang luar biasa besar yang berada di dalam bangunan utama
+                                        yang disebut Daibutsuden. Patung ini memiliki tinggi sekitar 15 meter dan diukir
+                                        dari kayu cemara. <br> <br>Daibutsuden sendiri adalah bangunan kayu terbesar di
+                                        dunia, meskipun struktur yang ada saat ini hanya sebagian dari ukuran aslinya
+                                        karena beberapa kali dibangun ulang setelah kebakaran. </p>
+
+                                </div>
+                                <div class="col-6">
+                                    <img src="asset/jean-vella-XYMWqUbS-Lg-unsplash.jpg"
+                                        style="width: 480px; height: 330px; margin-left: 70px; margin-top: 10px;"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container" style="height: 470px; margin-top: 60px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="fw-semibold">Kyoto </h5>
+                                    <h2 class="fw-bold">Kuil Kinkaku-ji</h2>
+                                    <br>
+
+                                    <p style="text-align: justify;">Daya tarik utama dari Kinkaku-ji adalah struktur
+                                        emas yang mempesona, yang mencerminkan dirinya di permukaan danau yang tenang.
+                                        Paviliun ini terdiri dari tiga lantai yang masing-masing memiliki gaya
+                                        arsitektur yang berbeda. <br> <br>Lantai pertama dibangun dengan gaya arsitektur
+                                        Shinden-zukuri, lantai kedua dalam gaya Buke-zukuri, dan lantai ketiga
+                                        mengadopsi gaya arsitektur Zen yang klasik.</p>
+
+                                </div>
+                                <div class="col-6">
+                                    <img src="asset/kinkaku.jpg"
+                                        style="width: 450px; height: 330px; margin-left: 90px; margin-top: 10px;"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container" style="height: 470px; margin-top: 60px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="fw-semibold">Tokyo</h5>
+                                    <h2 class="fw-bold">Tokyo Skytree</h2>
+                                    <br>
+
+                                    <p style="text-align: justify;">Desain Skytree terinspirasi dari gaya seni
+                                        tradisional Jepang, khususnya "pagoda," yang tercermin dalam bentuknya yang
+                                        ramping dan atap bertingkat. Ketinggian menara memungkinkan pengunjung untuk
+                                        menikmati pemandangan yang luar biasa dari Tokyo dan sekitarnya dari dek
+                                        observasi. <br> <br>Dek observasi pada ketinggian tertentu menawarkan panorama
+                                        kota yang gemerlapan di siang hari dan cahaya gemerlap di malam hari,
+                                        menciptakan pengalaman yang tak terlupakan. </p>
+
+                                </div>
+                                <div class="col-6">
+                                    <img src="asset/skytre.jpg"
+                                        style="width: 480px; height: 330px; margin-left: 70px; margin-top: 10px;"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container" style="height: 470px; margin-top: 60px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="fw-semibold">Shibuya</h5>
+                                    <h2 class="fw-bold">Takeshita Street</h2>
+                                    <br>
+
+                                    <p style="text-align: justify;">Takeshita Street, terletak di Harajuku, Tokyo,
+                                        adalah jalan pejalan kaki yang menjadi pusat mode dan tren kreatif di Jepang.
+                                        Jalan ini dikenal sebagai titik utama bagi para fashionista dan pecinta gaya
+                                        unik untuk mengeksplorasi beragam toko-toko pakaian, aksesori, serta kafe dan
+                                        restoran yang penuh gaya. <br> <br>Takeshita Street mencerminkan keberagaman
+                                        budaya dan kreativitas yang khas dari Harajuku. Selain itu, terdapat juga toko
+                                        yang menyediakan barang kosmetik dan aksesoris yang unik dan eksentrik.</p>
+
+                                </div>
+                                <div class="col-6">
+                                    <img src="asset/licensed-image.jpg"
+                                        style="width: 480px; height: 330px; margin-left: 70px; margin-top: 10px;"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="container" style="height: 470px; margin-top: 60px;">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h5 class="fw-semibold">Osaka</h5>
+                                    <h2 class="fw-bold">Universal Japan</h2>
+                                    <br>
+
+                                    <p style="text-align: justify;">Dengan ciri khasnya yang mencolok, menara
+                                        roda-gantung yang terkenal, dan atmosfer yang penuh kegembiraan, USJ mengajak
+                                        pengunjungnya masuk ke dalam dunia magis film dan televisi. <br> <br> Taman ini
+                                        menampilkan berbagai wahana dan zona bertema, termasuk The Wizarding World of
+                                        Harry Potter, Jurassic Park, dan Minion Park, di mana pengunjung dapat
+                                        berinteraksi dengan karakter-karakter kesayangan mereka. </p>
+
+                                </div>
+                                <div class="col-6">
+                                    <img src="asset/osakawisata.jpg"
+                                        style="width: 480px; height: 330px; margin-left: 70px; margin-top: 10px;"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="swiper-pagination swp-2"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- best paket end -->
+
+
+
+
+
+    <!-- tombol paket -->
+    <div class="container-fluid tombol-paket text-start text-white">
+        <div class="d-flex">
+            <h1 class="fw-semibold display-4" style="padding-left: 70px; padding-top: 80px;">Sudah Punya <br> Rencana Ke
+                Jepang?
+            </h1>
+            <a href="#paket"><button class="btn cari cari-perjalanan fw-medium"
+                    style="height: 45px; width: 280px; margin-top: 150px; margin-left: 190px;" type="submit">Lihat Paket
+                    Perjalanan</button></a>
+        </div>
+    </div>
+    <!-- tombol paket end -->
+
+    <!-- Package -->
+
+    <div class="container" style="padding-top: 90px; padding-bottom: 90px;" id="paket">
+        <h6 class="text-center">Daftar Paket Perjalanan</h6>
+        <h3 class="text-center">Pilihlah Sesuai Keinginanmu</h3>
+        <div class="section-border text-center"></div>
+
+        <div class="swiper mySwiper2" style="margin-top: 50px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-sl">
+                        <div class="card-image">
+                            <img src="asset/Kyoto.jpg" />
+                        </div>
+
+                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                        <div class="chr">
+                            <div class="card-heading">
+                                <h2 class="fw-bold mb-0">Kyoto</h2>
+
+                                <p class="fw-semibold p-0 m-0" style="font-size: 20px;">Kota Kuil dan Sejarah &nbsp;
+                                    <span class="badge rounded-pill text-bg-warning"> ★ &nbsp;4,7</span>
+                                </p>
+                            </div>
+                            <div class="card-text2 mt-2">
+
+                                Tiket Pulang Pergi <span class="warna-centang">✔</span> <br>
+                                Banyak wisata kuil <span class="warna-centang">✔</span> <br>
+                                Berbagai tempat menarik seperti taman istana. <span class="warna-centang"> ✔</span> <br>
+                                Kyoto berfokus pada wisata khas jepang yang tradisional <span class="warna-centang">
+                                    ✔</span>
+                            </div>
+                            <div class="card-text2 fw-semibold text-end fs-4">
+                                <span class="text-decoration-line-through fs-5 fw-normal">$200</span>
+                                $100
+                            </div>
+                        </div>
+                        <a href="order.html" class="card-button"> Pesan</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-sl">
+                        <div class="card-image">
+                            <img src="asset/Osaka.jpg" />
+                        </div>
+
+                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                        <div class="chr">
+                            <div class="card-heading">
+                                <h2 class="fw-bold mb-0">Osaka</h2>
+
+                                <p class="fw-semibold p-0 m-0" style="font-size: 20px;">Dapur Jepang &nbsp; <span
+                                        class="badge rounded-pill text-bg-warning"> ★ &nbsp;4,8</span>
+                                </p>
+                            </div>
+                            <div class="card-text2 mt-2">
+
+                                Tiket Pulang Pergi <span class="warna-centang">✔</span> <br>
+                                Kuliner Menggoda <span class="warna-centang">✔</span> <br>
+                                Kehidupan Malam yang Meriah <span class="warna-centang"> ✔</span> <br>
+                                Osaka Berfokus Pada Pelestarian Budaya Tradisional <span class="warna-centang"> ✔</span>
+                            </div>
+                            <div class="card-text2 fw-semibold text-end fs-4" style="padding-top: 22px;">
+                                <span class="text-decoration-line-through fs-5 fw-normal">$200</span>
+                                $100
+                            </div>
+                        </div>
+                        <a href="order.html" class="card-button"> Pesan</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-sl">
+                        <div class="card-image">
+                            <img src="asset/nara.jpg" />
+                        </div>
+
+                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                        <div class="chr">
+                            <div class="card-heading">
+                                <h2 class="fw-bold mb-0">Nara</h2>
+
+                                <p class="fw-semibold p-0 m-0" style="font-size: 20px;">Kota Rusa Bebas &nbsp; <span
+                                        class="badge rounded-pill text-bg-warning"> ★ &nbsp;4,4</span>
+                                </p>
+                            </div>
+                            <div class="card-text2 mt-2">
+
+                                Tiket Pulang Pergi <span class="warna-centang">✔</span> <br>
+                                Suasana Tradisional Autentik<span class="warna-centang">✔</span> <br>
+                                Keanekaragaman Kuil Bersejarah <span class="warna-centang"> ✔</span> <br>
+                                Fokus pada Wisata Rusa Bebas yang Berkeliaran<span class="warna-centang"> ✔</span>
+                            </div>
+                            <div class="card-text2 fw-semibold text-end fs-4" style="padding-top: 22px;">
+                                <span class="text-decoration-line-through fs-5 fw-normal">$200</span>
+                                $100
+                            </div>
+                        </div>
+                        <a href="order.html" class="card-button"> Pesan</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-sl">
+                        <div class="card-image">
+                            <img src="asset/urayasu.jpg" />
+                        </div>
+
+                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                        <div class="chr">
+                            <div class="card-heading">
+                                <h2 class="fw-bold mb-0">Urayasu</h2>
+
+                                <p class="fw-semibold p-0 m-0" style="font-size: 20px;"> Kota Wisata Magis&nbsp; <span
+                                        class="badge rounded-pill text-bg-warning"> ★ &nbsp;5,0</span>
+                                </p>
+                            </div>
+                            <div class="card-text2 mt-2">
+
+                                Tiket Pulang Pergi <span class="warna-centang">✔</span> <br>
+                                Keajaiban Tokyo Disney Resort <span class="warna-centang">✔</span> <br>
+                                Pemandangan Damai Sekitar Teluk Tokyo <span class="warna-centang"> ✔</span> <br>
+                                Akses Yang Begitu Mudah menuju Pusat Tokyo <span class="warna-centang"> ✔</span>
+                            </div>
+                            <div class="card-text2 fw-semibold text-end fs-4" style="padding-top: 22px ;">
+                                <span class="text-decoration-line-through fs-5 fw-normal">$200</span>
+                                $100
+                            </div>
+                        </div>
+                        <a href="order.html" class="card-button"> Pesan</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-sl">
+                        <div class="card-image">
+                            <img src="asset/Shibuya.jpg" />
+                        </div>
+                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                        <div class="chr">
+                            <div class="card-heading">
+                                <h2 class="fw-bold mb-0">Shibuya</h2>
+
+                                <p class="fw-semibold p-0 m-0" style="font-size: 20px;">Distrik Modern & Kreatif &nbsp;
+                                    <span class="badge rounded-pill text-bg-warning"> ★ &nbsp;4,9</span>
+                                </p>
+                            </div>
+                            <div class="card-text2 mt-2">
+
+                                Tiket Pulang Pergi <span class="warna-centang">✔</span> <br>
+                                Energi Modern di Shibuya Crossing <span class="warna-centang">✔</span> <br>
+                                Beragam Tren Mode di Takeshita Street <span class="warna-centang"> ✔</span> <br>
+                                Kyoto berfokus pada wisata khas jepang yang tradisional <span class="warna-centang">
+                                    ✔</span>
+                            </div>
+                            <div class="card-text2 fw-semibold text-end fs-4" style="padding-top: 22px;">
+                                <span class="text-decoration-line-through fs-5 fw-normal">$200</span>
+                                $100
+                            </div>
+                        </div>
+                        <a href="order.html" class="card-button"> Pesan</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-sl">
+                        <div class="card-image">
+                            <img src="asset/louie-martinez-IocJwyqRv3M-unsplash.jpg" />
+                        </div>
+
+                        <a class="card-action" href="#"><i class="fa fa-heart"></i></a>
+                        <div class="chr">
+                            <div class="card-heading">
+                                <h2 class="fw-bold mb-0">Tokyo</h2>
+
+                                <p class="fw-semibold p-0 m-0" style="font-size: 20px;"> Ibu Kota Futuristik &nbsp;
+                                    <span class="badge rounded-pill text-bg-warning"> ★ &nbsp;4,8</span>
+                                </p>
+                            </div>
+                            <div class="card-text2 mt-2">
+
+                                Tiket Pulang Pergi <span class="warna-centang">✔</span> <br>
+                                Kemegahan Modern yang memikat di Pencakar Langit <span class="warna-centang">✔</span>
+                                <br>
+                                Wisata Tradisional di Kuil dan Taman <span class="warna-centang"> ✔</span> <br>
+                                Keanekaragaman Tren dan Gaya Hidup<span class="warna-centang"> ✔</span>
+                            </div>
+                            <div class="card-text2 fw-semibold text-end fs-4" style="padding-top: 22px;">
+                                <span class="text-decoration-line-through fs-5 fw-normal">$200</span>
+                                $100
+                            </div>
+                        </div>
+                        <a href="order.html" class="card-button"> Pesan</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-button-next sbn-3"></div>
+            <div class="swiper-button-prev sbp-3"></div> -->
+            <div class="swiper-pagination swp-1"></div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <!-- testimonial -->
+
+
+
+
+
+    <div class="container-fluid bg-dark text-white" style="padding-top: 90px; padding-bottom: 10px;" id="test">
+        <div class="container" style="margin-bottom: 50px;">
+            <h1 class="text-center">Biarkan Mereka Yang Menjawab</h1>
+            <h6 class="text-center fw-normal">Berikut Beberapa Klien Yang Mungkin Anda Kenal Yang Telah Merasakan
+                Pelayanan Kami</h>
+                <div class="swiper mySwiper3" style="margin-top: 50px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="custom-testimoni">
+                                <div class="face front-face">
+                                    <img src="asset/raffi-ahmad_43.jpeg" alt="" class="profile">
+                                    <div class="pt-3 text-uppercase name text-white">
+                                        Raffi Ahmad
+                                    </div>
+                                    <div class="designation">Artis dan Presenter TV</div>
+                                </div>
+                                <div class="face back-face">
+                                    <span class="fa fa-quote-left text-white"></span>
+                                    <div class="testimonial text-white">
+                                        "Saya mencoba menggunakan NipponVibes.com. Wah, benar-benar mudah! Situs ini
+                                        memberikan opsi yang lengkap, mulai dari pemesanan tiket pesawat hingga
+                                        rekomendasi restoran lokal. Pengalaman wisata saya semakin menyenangkan dan tak
+                                        terlupakan. Terima kasih NipponVibes.com, benar-benar memudahkan hidup saya!"
+                                    </div>
+                                    <span class="fa fa-quote-right text-white"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="custom-testimoni">
+                                <div class="face front-face">
+                                    <img src="asset/attagledeg.jpg" alt="" class="profile">
+                                    <div class="pt-3 text-uppercase name text-white">
+                                        Atta Halilintar
+                                    </div>
+                                    <div class="designation">Content Creator dan YouTuber</div>
+                                </div>
+                                <div class="face back-face">
+                                    <span class="fa fa-quote-left text-white"></span>
+                                    <div class="testimonial text-white">
+                                        "Sebagai content creator, saya selalu mencari tempat-tempat unik untuk konten
+                                        saya. NipponVibes.com memberikan panduan yang keren tentang tempat-tempat
+                                        fotogenik di Jepang. Saya berhasil membuat vlog yang epik berkat rekomendasi
+                                        dari situs ini. Sukses terus, NipponVibes.com!"
+                                    </div>
+                                    <span class="fa fa-quote-right text-white"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="custom-testimoni">
+                                <div class="face front-face">
+                                    <img src="asset/baim-wong-siap-jual-ipad-murah-yang-sempat-diduga-barang-ilegal-C3oJVNgQX9.jpg"
+                                        alt="" class="profile">
+                                    <div class="pt-3 text-uppercase name text-white">
+                                        Baim Wong
+                                    </div>
+                                    <div class="designation">Aktor dan Presenter TV</div>
+                                </div>
+                                <div class="face back-face">
+                                    <span class="fa fa-quote-left text-white"></span>
+                                    <div class="testimonial text-white">
+                                        "Saya menemukan NipponVibes.com. Situs ini memberikan informasi yang sangat
+                                        bermanfaat tentang kegiatan keluarga, taman bermain, dan akomodasi yang ramah
+                                        keluarga. Perjalanan keluarga kami menjadi lebih lancar dan menyenangkan berkat
+                                        saran-saran dari situs ini. Terima kasih banyak!"
+                                    </div>
+                                    <span class="fa fa-quote-right text-white"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="custom-testimoni">
+                                <div class="face front-face">
+                                    <img src="asset/raffi-ahmad_43.jpeg" alt="" class="profile">
+                                    <div class="pt-3 text-uppercase name text-white">
+                                        Raffi Ahmad
+                                    </div>
+                                    <div class="designation">Artis dan Presenter TV</div>
+                                </div>
+                                <div class="face back-face">
+                                    <span class="fa fa-quote-left text-white"></span>
+                                    <div class="testimonial text-white">
+                                        "Saya mencoba menggunakan NipponVibes.com. Wah, benar-benar mudah! Situs ini
+                                        memberikan opsi yang lengkap, mulai dari pemesanan tiket pesawat hingga
+                                        rekomendasi restoran lokal. Pengalaman wisata saya semakin menyenangkan dan tak
+                                        terlupakan. Terima kasih NipponVibes.com, benar-benar memudahkan hidup saya!"
+                                    </div>
+                                    <span class="fa fa-quote-right text-white"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="custom-testimoni">
+                                <div class="face front-face">
+                                    <img src="asset/attagledeg.jpg" alt="" class="profile">
+                                    <div class="pt-3 text-uppercase name text-white">
+                                        Atta Halilintar
+                                    </div>
+                                    <div class="designation">Content Creator dan YouTuber</div>
+                                </div>
+                                <div class="face back-face">
+                                    <span class="fa fa-quote-left text-white"></span>
+                                    <div class="testimonial text-white">
+                                        "Sebagai content creator, saya selalu mencari tempat-tempat unik untuk konten
+                                        saya. NipponVibes.com memberikan panduan yang keren tentang tempat-tempat
+                                        fotogenik di Jepang. Saya berhasil membuat vlog yang epik berkat rekomendasi
+                                        dari situs ini. Sukses terus, NipponVibes.com!"
+                                    </div>
+                                    <span class="fa fa-quote-right text-white"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="custom-testimoni">
+                                <div class="face front-face">
+                                    <img src="asset/baim-wong-siap-jual-ipad-murah-yang-sempat-diduga-barang-ilegal-C3oJVNgQX9.jpg"
+                                        alt="" class="profile">
+                                    <div class="pt-3 text-uppercase name text-white">
+                                        Baim Wong
+                                    </div>
+                                    <div class="designation">Aktor dan Presenter TV</div>
+                                </div>
+                                <div class="face back-face">
+                                    <span class="fa fa-quote-left text-white"></span>
+                                    <div class="testimonial text-white">
+                                        "Saya menemukan NipponVibes.com. Situs ini memberikan informasi yang sangat
+                                        bermanfaat tentang kegiatan keluarga, taman bermain, dan akomodasi yang ramah
+                                        keluarga. Perjalanan keluarga kami menjadi lebih lancar dan menyenangkan berkat
+                                        saran-saran dari situs ini. Terima kasih banyak!"
+                                    </div>
+                                    <span class="fa fa-quote-right text-white"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next sbn-2"></div>
+                    <div class="swiper-button-prev sbp-2"></div>
+                    <div class="swiper-pagination swp-1"></div>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- testimonial end -->
+    <!-- tombol paket -->
+    <div class="container-fluid tombol-paket2 text-start text-white mt-0">
+        <div class="d-flex">
+            <div class="kontak-1">
+                <h3 class="fw-semibold display-4" style="padding-left: 70px; padding-top: 55px;"> Sudah Siap<br>
+                    Berlibur
+                    di Jepang?
+                </h3>
+                <h6 class="fw-medium" style="padding-left: 70px; padding-top: 5px;">Jika ada pertanyaan bisa
+                    konsultasikan kepada kami</h6>
+            </div>
+
+            <a href="https://www.instagram.com/nippon_vibess/"><button class="btn cari cari-perjalanan fw-medium"
+                    style="height: 45px; width: 200px; margin-top: 150px; margin-left: 330px;" type="submit">Hubungi
+                    Kami
+                </button></a>
+        </div>
+    </div>
+    <!-- tombol paket end -->
+
+
+
+
+
+    <div class="container-fluid text-white text-center text-lg-start"
+        style="background-color: rgb(218, 28, 28); margin-top: -1px;" id="contact">
+        <!-- Grid container -->
+        <div class="container pt-4 footer-kotak">
+            <div class="row mt-4 ">
+                <div class="col-4">
+                    <h4>Tentang Kami</h4>
+                    <p style="font-size: 14px;">Sebuah tim pengembara yang berbagi cinta mendalam pada segala yang
+                        Jepang</p>
+                    <p style="font-size: 14px;">Kami hadir untuk memandu anda melalui petualangan yang penuh keajaiban
+                        di setiap sudut negeri sakura
+                    </p>
+                </div>
+                <div class="col-4">
+                    <h4>Hubungi Kami</h4>
+                    <table class="table table-borderless">
+                        <tr>
+                            <td style="background-color: transparent; color: white; font-size: 14px;"><i
+                                    class="fa fa-home"></i></td>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">Jl. Poras no.7
+                                Sindang Barang Loji</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: transparent; color: white; font-size: 14px;"><i
+                                    class="fa fa-globe"></i></td>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">NipponVibes.com
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: transparent; color: white; font-size: 14px;"><i
+                                    class="fa fa-phone"></i></td>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">+62 812 1234 1234
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: transparent; color: white; font-size: 14px;"><i
+                                    class="fa fa-fax"></i></td>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">+62 812 1234 1234
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-4">
+                    <h4>Open Service</h4>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">Senin - Kamis</td>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">08.00 - 21.00</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">Jum'at - Sabtu
+                            </td>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">08.00 - 13.00</td>
+                        </tr>
+                        <tr>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">Minggu</td>
+                            <td style="background-color: transparent; color: white; font-size: 14px;">09.00 - 22.00</td>
+                        </tr>
+                    </table>
+
+                    <div class="mt-4 pb-4">
+                        <!-- Facebook -->
+                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fa fa-facebook-f"></i></a>
+                        <!-- Dribbble -->
+                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fa fa-dribbble"></i></a>
+                        <!-- Twitter -->
+                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fa fa-twitter"></i></a>
+                        <!-- Google + -->
+                        <a type="button" class="btn btn-floating btn-danger btn-lg"><i class="fa fa-linkedin"></i></a>
+                        <!-- Linkedin -->
+                    </div>
+                </div>
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+    </div>
+    <!-- Copyright -->
+    <footer class="container-fluid p-3 text-center text-white bg-danger" style="margin-top: -1px; ">
+        Copyright &copy; 2024 Muhammad Abdan Syakuro
+    </footer>
+    <!-- Copyright -->
+
+
+
+
+
+
+
+
+
+    <!-- js aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+
+        });
+
+        var swiper = new Swiper('.mySwiper3', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 6000,
+            },
+            effect: 'coverflow',
+            coverflowEffect: {
+                rotate: 20,
+                scale: 0.8,
+                slideShadows: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+        });
+
+        var swiper = new Swiper(".mySwiper4", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

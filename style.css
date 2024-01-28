@@ -1,0 +1,353 @@
+.hero-1{
+    background-image: url(asset/jezael-melgoza-alY6_OpdwRQ-unsplash.jpg);
+    height: 670px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.teks-hero{
+    padding-top: 225px;
+    color: white;
+}
+
+
+.custom-tebal{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: red;
+    transition: 0.5s;
+}
+
+.nav-link-active{
+    text-decoration: none;
+    color: red;
+}
+
+.cari{
+    background-color: red;
+    color: white;
+}
+
+.cari:hover{
+    background-color: white;
+    color: red;
+}
+
+
+.card:hover{
+    scale: 1.03;
+    transition: 0.15s;
+}
+
+.swp-1 {
+    position:relative;
+    margin-top: 40px;
+  }
+
+  .swp-2{
+    position: relative;
+    margin-top: -80px;
+  }
+  
+
+  .section-border {
+    height: 9px;
+    width: 220px;
+    background: linear-gradient(37deg, rgb(224, 22, 22) 1%, rgb(30, 17, 16) 100%);
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 20px ;
+}
+
+.swiper-pagination-bullet {
+    background-color: red;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    color: white; /* Warna teks tombol */
+    background-color: transparent; /* Warna latar belakang tombol */
+    width: 50px;
+    height: 70px;
+    font-weight: 700;
+    margin-top: -50px;
+  }
+  
+.card-img-top{
+    filter: brightness(0.7);
+}
+
+.tombol-paket{
+    background-image: url(asset/package.jpg);
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+
+.tombol-paket2{
+    background-image: url("asset/header.jpg");
+    height: 280px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+}
+
+.cari-perjalanan{
+    font-size: 20px;
+    
+}
+
+.pesan{
+    background-color: red;
+    color: white;
+}
+
+.pesan:hover{
+    background-color: rgb(161, 8, 8);
+    color: rgb(255, 251, 251);
+    transition: 0.5s;
+}
+
+.paket-body{
+    box-shadow: 3px 3px 2px 2px rgba(0,0,0,0.15);
+}
+
+
+.card-sl {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 8px 8px 0px 0;
+}
+
+.card-action {
+    position: relative;
+    float: right;
+    margin-top: -25px;
+    margin-right: 20px;
+    z-index: 2;
+    color: #E26D5C;
+    background: #fff;
+    border-radius: 100%;
+    padding: 15px;
+    font-size: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 2px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-action:hover {
+    color: #fff;
+    background: #E26D5C;
+    -webkit-animation: pulse 1.5s infinite;
+}
+
+.card-heading {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.chr{
+    /* background-color: gainsboro; */
+    background-color: #f0ecec;
+}
+.card-text2 {
+    padding-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* background: #fff; */
+    font-size: 14px;
+    /* color: #636262; */
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: red;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    text-decoration: none;
+}
+
+.card-button:hover {
+    text-decoration: none;
+    background-color: rgb(172, 13, 13);
+    color: #fff;
+    transition: 0.5s;
+
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+
+    70% {
+        -moz-transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(90, 153, 212, 0);
+    }
+
+    100% {
+        -moz-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(90, 153, 212, 0);
+    }
+}
+
+
+.custom-testimoni {
+    width:100%;
+    height: 450px;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    border: none;
+    background-color: inherit;
+}
+
+.custom-testimoni .face {
+    position: absolute;
+    color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: rgb(218, 28, 28); 
+    transform-style: preserve-3d;
+    transition: 0.25s;
+    backface-visibility: hidden;
+    /* border-right: 1px solid #999;
+border-bottom: 1px solid #999; */
+}
+
+.custom-testimoni .face.front-face,
+.custom-testimoni .face.back-face {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-testimoni .face.front-face .profile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.custom-testimoni .face.front-face .name {
+    letter-spacing: 2px;
+}
+
+.custom-testimoni .face.front-face .designation {
+    font-size: 0.8rem;
+    color: #ddd;
+    letter-spacing: 0.8px;
+}
+
+.custom-testimoni:hover .face.front-face {
+    transform: rotateY(180deg);
+}
+
+.custom-testimoni .face.back-face {
+    position: absolute;
+    background: black;
+    transform: rotateY(180deg);
+    padding: 20px 30px;
+    text-align: center;
+    user-select: none;
+}
+
+.custom-testimoni .face.back-face .fa-quote-left {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    font-size: 1.2rem;
+}
+
+.custom-testimoni .face.back-face .fa-quote-right {
+    position: absolute;
+    bottom: 35px;
+    right: 25px;
+    font-size: 1.2rem;
+}
+
+.custom-testimoni:hover .face.back-face {
+    transform: rotateY(360deg);
+}
+
+@media(max-width: 991.5px) {
+    .col-lg-4 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+footer{
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 35px;
+}
+
+.sbn-2, .sbp-2{
+    color: red;
+}
+
+.sbn-3, .sbp-3{
+    color: black;
+    font-size: 10px;
+}
+.warna-centang{
+    color: green;
+}
+
+a{
+    text-decoration: none;
+}
+
+.modal-backdrop{
+    z-index: 2;
+}
+
+.google {
+    width: 15px;
+    height: 15px;
+}
+
+.custom-input:focus{
+    border-color: red;
+    box-shadow: 0 0 10px #a01414;
+}
